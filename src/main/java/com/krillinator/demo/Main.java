@@ -16,6 +16,22 @@ public class Main {
         // TODO - Test Equals Function
         Student student = new Student("Benny");
         Student2 student2 = new Student2("Benny");
+        Student test1 = new Student("");
+        Student test2 = new Student("");
+        NormalStudent normalStudent1 = new NormalStudent("");
+        NormalStudent normalStudent2 = new NormalStudent("");
+
+        // WITH OVERRIDE
+        System.out.println("---DEBUGGING---");
+        System.out.println(test1.equals(test2));    // TRUE
+        System.out.println(test2.equals(test1));    // TRUE
+        System.out.println("---DEBUGGING---");
+
+        // WITHOUT OVERRIDE
+        System.out.println("---DEBUGGING W/O Override---");
+        System.out.println(normalStudent1.equals(normalStudent2));    // FALSE
+        System.out.println(normalStudent2.equals(normalStudent1));    // FALSE
+        System.out.println("---DEBUGGING W/O Override---");
 
         System.out.println(student.equals(student2));   // TRUE, A: False
         System.out.println(student2.equals(student));   // TRUE, A: False
